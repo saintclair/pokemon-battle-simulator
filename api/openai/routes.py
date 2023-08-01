@@ -1,8 +1,9 @@
 from flask import Blueprint
 import json
 import requests
-import openai
-from api.promptlayer.routes import track_request
+#import openai
+import promptlayer
+#from api.promptlayer.routes import track_request
 
 from dotenv import load_dotenv
 import os
@@ -10,12 +11,17 @@ import os
 # Load environment variables from .env file
 load_dotenv('.env')
 
+# Swap out your 'import openai'
+openai = promptlayer.openai
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 bp_openai = Blueprint('openai', __name__)
 
 @bp_openai.route('/completion-create', methods=['POST'])
-def completion_create(prompt, pl_tags=[], engine="gpt-3.5-turbo"):
+def completion_create(prompt, pl_tags=[], engine="text-davinci-003"):
+
+    """
+    Using OpenAI sem promptlayer here
 
     # Do something fun 🚀
     url = 'https://api.openai.com/v1/chat/completions'
@@ -33,7 +39,7 @@ def completion_create(prompt, pl_tags=[], engine="gpt-3.5-turbo"):
                 "content": prompt
             }
         ],
-        #pl_tags # ex:["name-guessing", "pipeline-2"]
+        "pl_tags": pl_tags
     }
 
     r = requests.post(url, 
@@ -64,3 +70,14 @@ def completion_create(prompt, pl_tags=[], engine="gpt-3.5-turbo"):
         return 'OPEN AI Error:' + response['error']['message']
     
     return response["choices"][0]["message"]['content']
+    """
+
+    # Using Prompt Layer
+    response = openai.Completion.create(
+        engine="text-davinci-003", #gpt-3.5-turbo (not working in promptlayer)
+        prompt=prompt, 
+        pl_tags=pl_tags
+    )
+
+    #return response["choices"][0]["message"]['content']
+    return response["choices"][0]["text"]

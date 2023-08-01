@@ -1,0 +1,11 @@
+/* loading-spinner.css */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #777;
+    margin-top: 20px;
+  }
+  

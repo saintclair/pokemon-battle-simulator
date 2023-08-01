@@ -1,0 +1,54 @@
+/* pokemon-card.css */
+.pokemon-card {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pokemon-card.winner {
+    border-color: #ffca28; /* Altere a cor conforme desejado */
+    box-shadow: 0 4px 8px rgba(255, 202, 40, 0.2);
+  }
+  
+  .pokemon-name {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .pokemon-image {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    display: block;
+  }
+  
+  .pokemon-type {
+    font-size: 14px;
+  }
+  
+  .pokemon-type-badge {
+    padding: 2px 5px;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  /* Cores de acordo com o tipo do Pokémon */
+  .pokemon-type-badge.grass {
+    background-color: #4caf50;
+  }
+  
+  .pokemon-type-badge.fire {
+    background-color: #f44336;
+  }
+  
+  .pokemon-type-badge.water {
+    background-color: #2196f3;
+  }
+  
+  /* Adicione mais classes conforme os tipos disponíveis */
+  
