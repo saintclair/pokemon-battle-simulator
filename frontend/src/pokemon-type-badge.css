@@ -1,0 +1,104 @@
+/* pokemon-type-badge.css */
+
+/* Estilo base para o badge */
+.pokemon-type-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 16px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Estilos para os diferentes tipos de Pokémon */
+  .pokemon-type-badge.normal {
+    background-color: #A8A878;
+    color: white;
+  }
+  
+  .pokemon-type-badge.fighting {
+    background-color: #C03028;
+    color: white;
+  }
+  
+  .pokemon-type-badge.flying {
+    background-color: #A890F0;
+    color: white;
+  }
+  
+  .pokemon-type-badge.poison {
+    background-color: #A040A0;
+    color: white;
+  }
+  
+  .pokemon-type-badge.ground {
+    background-color: #E0C068;
+    color: white;
+  }
+  
+  .pokemon-type-badge.rock {
+    background-color: #B8A038;
+    color: white;
+  }
+  
+  .pokemon-type-badge.bug {
+    background-color: #A8B820;
+    color: white;
+  }
+  
+  .pokemon-type-badge.ghost {
+    background-color: #705898;
+    color: white;
+  }
+  
+  .pokemon-type-badge.steel {
+    background-color: #B8B8D0;
+    color: white;
+  }
+  
+  .pokemon-type-badge.fire {
+    background-color: #F08030;
+    color: white;
+  }
+  
+  .pokemon-type-badge.water {
+    background-color: #6890F0;
+    color: white;
+  }
+  
+  .pokemon-type-badge.grass {
+    background-color: #78C850;
+    color: white;
+  }
+  
+  .pokemon-type-badge.electric {
+    background-color: #F8D030;
+    color: white;
+  }
+  
+  .pokemon-type-badge.psychic {
+    background-color: #F85888;
+    color: white;
+  }
+  
+  .pokemon-type-badge.ice {
+    background-color: #98D8D8;
+    color: white;
+  }
+  
+  .pokemon-type-badge.dragon {
+    background-color: #7038F8;
+    color: white;
+  }
+  
+  .pokemon-type-badge.dark {
+    background-color: #705848;
+    color: white;
+  }
+  
+  .pokemon-type-badge.fairy {
+    background-color: #EE99AC;
+    color: white;
+  }
+  
