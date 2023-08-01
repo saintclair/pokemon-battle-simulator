@@ -1,18 +1,20 @@
 # Pokémon Battle Simulator
 
-Faça o clone do projeto, em seguida crie sua virtualenv para o python
+Clone the project, then create your virtualenv for python
 
 `virtualenv -p=python3 env`
 
-Ative sua virtualenv, 
+Activate your virtualenv,
 
 `source env/bin/active`
 
-Instale os pacotes do Python
+Install Python packages
 
 `pip install -r requirements.txt`
 
-com o yarn em seu computador, rode yarn install && yarn start
+with yarn on your computer, run:
+
+`yarn install && yarn start`
 
 ### Demo
 ![Texto alternativo](https://raw.githubusercontent.com/saintclair/pokemon-battle-simulator/main/frontend/src/assets/images/demo.gif)
