@@ -15,5 +15,4 @@ Instale os pacotes do Python
 com o yarn em seu computador, rode yarn install && yarn start
 
 ### Demo
-<img src="/src/assets/images/demo.gif" />
-![Texto alternativo](caminho/para/sua/imagem.png)
+![Texto alternativo](https://raw.githubusercontent.com/saintclair/pokemon-battle-simulator/main/frontend/src/assets/images/demo.gif)
