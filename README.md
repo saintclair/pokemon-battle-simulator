@@ -12,6 +12,10 @@ Install Python packages
 
 `pip install -r requirements.txt`
 
+Rename file .env_dev to .env with your Keys
+`OPENAI_API_KEY=<YOUR_OPENAI_API_KEY>
+PROMPTLAYER_API_KEY=<YOUR_OPENAI_PROMPTLAYER_API_KEY>`
+
 with yarn on your computer, run:
 
 `yarn install && yarn start`
